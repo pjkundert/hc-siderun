@@ -69,7 +69,7 @@ function _sr_opt_parse {
               ;;
             *)
               shift 1
-              local __VAL="${1}"
+              local __VAL="${1:-}"
               ;;
           esac
         fi

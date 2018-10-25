@@ -5,7 +5,7 @@
 # make bash a little more strict / deterministic
 set -Eeuo pipefail
 
-_SR_VERSION_GIT="ceabcce"
+_SR_VERSION_GIT="f7eb509"
 
 # -- begin source files -- #
 
@@ -120,7 +120,7 @@ function _sr_opt_parse {
               ;;
             *)
               shift 1
-              local __VAL="${1}"
+              local __VAL="${1:-}"
               ;;
           esac
         fi
